@@ -1,12 +1,18 @@
 {
   "name": "dom-to-json",
   "description": "Convert DOM nodes into compact JSON objects, and vice versa, as fast as possible.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Suman Kunwar <sumn2u@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/sumn2u/dom-to-json.git"
   },
+  "keywords": [
+     "dom to json",
+     "json to dom",
+     "toJSON",
+     "toDOM"
+   ],
   "bugs": "http://github.com/sumn2u/dom-to-json/issues",
   "engines": {
     "node": ">= 4.0.0"
