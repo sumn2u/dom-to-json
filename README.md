@@ -1,0 +1,100 @@
+DOM T0 JSON
+======
+
+Convert DOM nodes into compact JSON objects, and vice versa, as fast as possible.
+
+## Jump To
+* [Description](#description)
+* [Installation](#installation)
+* [Demos](#demos)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Contributing](#contributing)
+* [License](#license)
+
+## Description
+
+The primary purpose of dom-to-json is to create  comporessed json object from DOM trees and vice-versa.
+
+
+## Installation
+
+Installing dom-to-json is easy.  You can pull it from Yarn...
+
+```
+yarn add dom-to-json
+```
+
+...or grab it from NPM and manually include it as a script tag...
+
+```
+npm install dom-to-node --save
+```
+
+
+## Demos
+
+Coming soon...
+
+## Usage
+
+Using dom-to-json is super simple: use the [`.toJSON()`](#domJSON.toJSON) method to create a JSON representation of the DOM tree:
+
+```javascript
+import { toJSON  } from 'dom-to-node'
+
+let someDOMElement = document.getElementById('sampleId');
+let jsonOutput = toJSON(someDOMElement);
+
+```
+
+And then rebuild the DOM Node from that JSON using [`.toDOM()`](#domJSON.toDOM):
+
+```javascript
+import { toDOM } from 'dom-to-node'
+
+let DOMDocumentFragment = toDOM(jsonOutput);
+someDOMElement.parentNode.replaceChild(someDOMElement, DOMDocumentFragment);
+
+```
+
+
+
+## Tests
+
+You can run test by using following commands
+
+```javascript
+npm run test
+
+```
+
+
+## Contributing
+
+Feel free to pull and contribute!  If you do, please make a separate branch on your Pull Request, rather than pushing your changes to the Master.  It would also be greatly appreciated if you ran the appropriate tests before submitting the request (there are three sets, listed below).
+
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2019 Suman Kunwar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
