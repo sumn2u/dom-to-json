@@ -35,7 +35,7 @@ yarn add dom-to-json
 ...or grab it from NPM and manually include it as a script tag...
 
 ```
-npm install dom-to-node --save
+npm install dom-to-json --save
 ```
 
 
