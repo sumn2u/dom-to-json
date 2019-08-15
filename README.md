@@ -48,7 +48,7 @@ Coming soon...
 Using dom-to-json is super simple: use the [`.toJSON()`](#domJSON.toJSON) method to create a JSON representation of the DOM tree:
 
 ```javascript
-import { toJSON  } from 'dom-to-node'
+import { toJSON  } from 'dom-to-json'
 
 let someDOMElement = document.getElementById('sampleId');
 let jsonOutput = toJSON(someDOMElement);
@@ -58,7 +58,7 @@ let jsonOutput = toJSON(someDOMElement);
 And then rebuild the DOM Node from that JSON using [`.toDOM()`](#domJSON.toDOM):
 
 ```javascript
-import { toDOM } from 'dom-to-node'
+import { toDOM } from 'dom-to-json'
 
 let DOMDocumentFragment = toDOM(jsonOutput);
 someDOMElement.parentNode.replaceChild(someDOMElement, DOMDocumentFragment);

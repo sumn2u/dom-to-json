@@ -1,7 +1,7 @@
 {
   "name": "dom-to-json",
   "description": "Convert DOM nodes into compact JSON objects, and vice versa, as fast as possible.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Suman Kunwar <sumn2u@gmail.com>",
   "repository": {
     "type": "git",
