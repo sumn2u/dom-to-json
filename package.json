@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.1.4",
-    "babel-eslint": "^4.0.0",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-syntax-async-functions": "^6.1.18",
     "babel-plugin-transform-es2015-arrow-functions": "^6.4.0",
     "babel-plugin-transform-es2015-for-of": "^6.3.13",
